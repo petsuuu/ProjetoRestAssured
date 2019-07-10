@@ -43,7 +43,7 @@ public class MovimentacaoTest extends BaseTest {
     }
 
 
-    @Test
+
     public void naoDeveInserirMOvimentaçãoComDAtaFutura() {
         Movimentacao mov = getMovimentacaoValida();
         mov.setData_transacao(DataUtils.getDataDiferencaDias(2));

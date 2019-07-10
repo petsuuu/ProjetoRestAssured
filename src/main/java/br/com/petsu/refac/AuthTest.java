@@ -9,7 +9,6 @@ import static io.restassured.RestAssured.given;
 
 public class AuthTest extends BaseTest {
 
-
     @Test
     public void naoDeveAcessarAPISemToken() {
         FilterableRequestSpecification req = (FilterableRequestSpecification) RestAssured.requestSpecification;

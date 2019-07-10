@@ -20,6 +20,7 @@ public class BaseTest implements Constantes {
           RestAssured.proxy(APP_PROXY, APP_PROXY_PORT);
 
 
+
         RequestSpecBuilder reqBuilder = new RequestSpecBuilder();
         reqBuilder.setContentType(APP_CONTENT_TYPE);
         RestAssured.requestSpecification = reqBuilder.build();
@@ -31,5 +32,6 @@ public class BaseTest implements Constantes {
         //Habilitar log de erro caso ocorra erro
         RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
 
+        
     }
 }
